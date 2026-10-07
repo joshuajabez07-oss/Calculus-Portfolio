@@ -1,0 +1,608 @@
+/* =========================================================
+   2CALC-IT E-PORTFOLIO
+   Main Stylesheet
+   ========================================================= */
+
+
+/* ==================== RESET ==================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #07111f;
+    color: #f1f5f9;
+    line-height: 1.6;
+}
+
+
+/* ==================== GENERAL ==================== */
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+
+.section {
+    padding: 80px 0;
+    background-color: #07111f;
+}
+
+
+.section-dark {
+    background-color: #0b1726;
+}
+
+
+.section-label {
+    color: #2ce6d7;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+
+h1,
+h2,
+h3 {
+    color: #ffffff;
+    line-height: 1.2;
+}
+
+
+h2 {
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+
+h3 {
+    font-size: 19px;
+}
+
+
+p {
+    color: #dbe4ee;
+}
+
+
+.section-introduction {
+    max-width: 750px;
+    margin-bottom: 35px;
+    color: #aebdcd;
+}
+
+
+/* ==================== HEADER ==================== */
+
+.header {
+    background-color: #050b13;
+    border-bottom: 1px solid #26384c;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+.header .container {
+    padding: 22px 0;
+}
+
+
+.logo-area {
+    margin-bottom: 15px;
+}
+
+
+.course-label {
+    color: #2ce6d7;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+
+.logo-area h1 {
+    font-size: 25px;
+    margin: 3px 0;
+}
+
+
+.portfolio-name {
+    color: #91a4b9;
+    font-size: 12px;
+}
+
+
+/* ==================== NAVIGATION ==================== */
+
+.navigation {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+
+.navigation a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 12px;
+    transition: 0.2s;
+}
+
+
+.navigation a:hover {
+    color: #2ce6d7;
+}
+
+
+/* ==================== HERO ==================== */
+
+.hero {
+    min-height: 480px;
+    display: flex;
+    align-items: center;
+    background-color: #07111f;
+}
+
+
+.hero-content {
+    max-width: 650px;
+}
+
+
+.hero h2 {
+    font-size: 52px;
+    max-width: 700px;
+    margin-bottom: 22px;
+}
+
+
+.hero p:not(.section-label) {
+    max-width: 650px;
+    color: #b8c7d8;
+    margin-bottom: 30px;
+}
+
+
+.button {
+    display: inline-block;
+    background-color: #2ce6d7;
+    color: #061019;
+    padding: 12px 22px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+
+.button:hover {
+    background-color: #ffffff;
+}
+
+
+/* ==================== ABOUT ==================== */
+
+.about-container {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 40px;
+    align-items: start;
+}
+
+
+.profile-container {
+    width: 100%;
+}
+
+
+.profile-image {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #40546a;
+    display: block;
+    transition: 0.2s;
+}
+
+
+.profile-image:hover {
+    opacity: 0.85;
+}
+
+
+.about-content h3 {
+    margin-bottom: 15px;
+}
+
+
+.about-content p {
+    margin-bottom: 15px;
+}
+
+
+.information-box {
+    background-color: #111e2c;
+    border: 1px solid #30455b;
+    border-radius: 6px;
+    padding: 18px;
+    margin-top: 20px;
+}
+
+
+.information-box p {
+    margin-bottom: 6px;
+    font-size: 14px;
+}
+
+
+.information-box p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* ==================== LEARNING JOURNEY ==================== */
+
+.topic-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+
+.topic-card {
+    background-color: #111e2c;
+    border: 1px solid #2c4054;
+    border-radius: 7px;
+    padding: 22px;
+}
+
+
+.topic-card h3 {
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+
+.topic-card p {
+    color: #aebdcd;
+    font-size: 14px;
+}
+
+
+/* ==================== ARTIFACTS ==================== */
+
+.artifact-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+
+.artifact-card {
+    background-color: #111a25;
+    border: 1px solid #2c4054;
+    border-radius: 7px;
+    overflow: hidden;
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+
+.artifact-card:hover {
+    transform: translateY(-4px);
+    border-color: #2ce6d7;
+}
+
+
+.artifact-card a {
+    display: block;
+}
+
+
+.artifact-card img {
+    display: block;
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+
+.artifact-media {
+    width: 100%;
+    background-color: #050b13;
+}
+
+
+.artifact-media video {
+    width: 100%;
+    height: 210px;
+    display: block;
+    object-fit: cover;
+}
+
+
+.artifact-content {
+    padding: 18px;
+}
+
+
+.artifact-content h3 {
+    font-size: 17px;
+    margin-bottom: 8px;
+}
+
+
+.artifact-content p {
+    color: #9fb0c2;
+    font-size: 13px;
+}
+
+
+/* ==================== CALCULUS + IT ==================== */
+
+.technology-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+
+.technology-card {
+    background-color: #111e2c;
+    border: 1px solid #2c4054;
+    border-radius: 7px;
+    padding: 22px;
+}
+
+
+.technology-card h3 {
+    color: #2ce6d7;
+    margin-bottom: 10px;
+}
+
+
+.technology-card p {
+    color: #b1c0d0;
+    font-size: 14px;
+}
+
+
+/* ==================== MY GROWTH ==================== */
+
+.growth-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+
+
+.growth-card {
+    background-color: #111e2c;
+    border: 1px solid #2c4054;
+    border-radius: 7px;
+    padding: 25px;
+}
+
+
+.growth-card h3 {
+    color: #2ce6d7;
+    margin-bottom: 10px;
+}
+
+
+.growth-card p {
+    color: #b1c0d0;
+}
+
+
+/* ==================== REFLECTION ==================== */
+
+.reflection-box {
+    max-width: 900px;
+    background-color: #111e2c;
+    border: 1px solid #2c4054;
+    border-radius: 7px;
+    padding: 30px;
+}
+
+
+.reflection-box p {
+    margin-bottom: 18px;
+}
+
+
+.reflection-box p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* ==================== REFERENCES ==================== */
+
+.reference-box {
+    max-width: 700px;
+    margin-top: 25px;
+    padding: 22px;
+    background-color: #111e2c;
+    border: 1px solid #2c4054;
+    border-radius: 7px;
+}
+
+
+.reference-box p {
+    margin-bottom: 7px;
+}
+
+
+.reference-box p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* ==================== FOOTER ==================== */
+
+.footer {
+    background-color: #050b13;
+    border-top: 1px solid #26384c;
+    padding: 30px 0;
+    text-align: center;
+}
+
+
+.footer p {
+    color: #8193a6;
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .artifact-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .topic-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .technology-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .growth-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .hero h2 {
+        font-size: 45px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 650px) {
+
+    .container {
+        width: 92%;
+    }
+
+
+    .section {
+        padding: 60px 0;
+    }
+
+
+    .header {
+        position: relative;
+    }
+
+
+    .navigation {
+        gap: 10px 14px;
+    }
+
+
+    .navigation a {
+        font-size: 11px;
+    }
+
+
+    .hero {
+        min-height: 400px;
+    }
+
+
+    .hero h2 {
+        font-size: 38px;
+    }
+
+
+    h2 {
+        font-size: 31px;
+    }
+
+
+    .about-container {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+
+    .profile-container {
+        max-width: 240px;
+    }
+
+
+    .profile-image {
+        height: 280px;
+    }
+
+
+    .artifact-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .topic-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .technology-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .growth-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .artifact-card img {
+        height: auto;
+        max-height: 500px;
+        object-fit: contain;
+        background-color: #050b13;
+    }
+
+
+    .artifact-media video {
+        height: auto;
+    }
+
+
+    .reflection-box {
+        padding: 20px;
+    }
+
+}
